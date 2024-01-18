@@ -4,7 +4,7 @@
     let isNavOpen = false;
 </script>
 
-<div class="navbar bg-base-100">
+<nav class="navbar fixed top-0 left-0 bg-base-100 shadow-2xl">
     <div class="navbar-start">
         <div class="dropdown">
             <button tabindex="0" class="btn btn-ghost lg:hidden" on:click={ e => {
@@ -42,4 +42,4 @@
     <div class="navbar-end pr-2">
         <a href="/" class="btn btn-sm btn-primary">Contact</a>
     </div>
-</div>
+</nav>
