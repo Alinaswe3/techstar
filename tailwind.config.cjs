@@ -13,11 +13,17 @@ const config = {
             {
                 custom: {
                     "primary": "#00e472",
+                    "primary-content":  "#fff",
                     "secondary": "#252829",
+                    "secondary-content":  "#fff",
                     "accent": "#abaeb0",
                     "neutral": "#ffffff",
                     "base-100": "#313536",
                     "base-200": "#252829",
+                    "info-content": "#fff",
+                    "success-content": "#fff",
+                    "warning-content": "#fff",
+                    "error-content": "#fff",
                 }
             }, "cupcake", "retro"
         ],
