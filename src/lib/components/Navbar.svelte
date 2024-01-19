@@ -1,33 +1,37 @@
 <script lang="ts">
     import Icon from '@iconify/svelte';
+    import { slide } from 'svelte/transition';
+    import { quintOut } from 'svelte/easing';
 
-    let isNavOpen = false;
+    let isNavOpen: boolean = false;
 </script>
 
-<nav class="navbar fixed top-0 left-0 bg-base-100 shadow-2xl z-50">
+{#if isNavOpen}
+    <!-- `A11y: Non-interactive element <div> should not be assigned mouse or keyboard event listeners.` -->
+    <div class="absolute top-0 left-0 w-full h-full z-20" on:click={() => isNavOpen =false }> </div>
+{/if}
+{#if isNavOpen}
+    <!-- `A11y: Non-interactive element <ul> should not be assigned mouse or keyboard event listeners.` -->
+    <ul on:click={() => isNavOpen=false} transition:slide={{delay:100, duration:200, easing: quintOut, axis: 'x'}} class="absolute left-[1rem] top-[3.8rem] menu menu-sm mt-3 z-30 p-2 shadow bg-base-100 rounded-btn w-40">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Skills</a></li>
+        <li><a href="/">Clients</a></li>
+    </ul>
+{/if}
+<nav class="navbar fixed top-0 left-0 bg-base-100 shadow-2xl z-10">
     <div class="navbar-start">
         <div class="dropdown">
-            <button tabindex="0" class="btn btn-ghost hidden lg:block" on:click={ e => {
-                if (isNavOpen) {
-                    const el = document.activeElement;
-                    if (el) {
-                        el?.blur();
-                    }
-                }
+            <button tabindex="0" class="relative btn btn-ghost hidden lg:block" on:click={() =>{
                 isNavOpen = !isNavOpen;
-            }}>
+            }
+            }>
                 {#if isNavOpen}
-                    <Icon icon="fontisto:close-a"/>
-                {:else}
-                    <Icon icon="pajamas:hamburger" />
-                {/if}
+                    <Icon  icon="fontisto:close-a"/>
+                    {:else}
+                    <Icon class="open" icon="pajamas:hamburger" />
+                    {/if}
             </button>
-            <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-btn w-52">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Skills</a></li>
-                <li><a href="/">Clients</a></li>
-            </ul>
         </div>
         <a href="/" class="lg:pl-4 pl-2 font-semibold text-xl">TechStar</a>
     </div>
