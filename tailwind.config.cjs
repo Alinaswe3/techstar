@@ -3,6 +3,22 @@ const config = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
 
     theme: {
+        screens: {
+            '2xl': {'max': '1535px'},
+            // => @media (max-width: 1535px) { ... }
+
+            'xl': {'max': '1279px'},
+            // => @media (max-width: 1279px) { ... }
+
+            'lg': {'max': '57em'},
+            // => @media (max-width: 1023px) { ... }
+
+            'md': {'max': '37.5em'},
+            // => @media (max-width: 600px) { ... }
+
+            'sm': {'max': '639px'},
+            // => @media (max-width: 639px) { ... }
+        },
         extend: {}
     },
 
@@ -15,7 +31,7 @@ const config = {
                     "primary": "#00e472",
                     "primary-content":  "#fff",
                     "secondary": "#252829",
-                    "secondary-content":  "#fff",
+                    "secondary-content":  "#808080",
                     "accent": "#abaeb0",
                     "neutral": "#ffffff",
                     "base-100": "#313536",

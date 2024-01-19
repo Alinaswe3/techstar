@@ -4,10 +4,10 @@
     let isNavOpen = false;
 </script>
 
-<nav class="navbar fixed top-0 left-0 bg-base-100 shadow-2xl">
+<nav class="navbar fixed top-0 left-0 bg-base-100 shadow-2xl z-50">
     <div class="navbar-start">
         <div class="dropdown">
-            <button tabindex="0" class="btn btn-ghost lg:hidden" on:click={ e => {
+            <button tabindex="0" class="btn btn-ghost hidden lg:block" on:click={ e => {
                 if (isNavOpen) {
                     const el = document.activeElement;
                     if (el) {
@@ -31,7 +31,7 @@
         </div>
         <a href="/" class="lg:pl-4 pl-2 font-semibold text-xl">TechStar</a>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="navbar-center lg:hidden flex">
         <ul class="menu menu-horizontal px-1">
             <li><a href="/">Home</a></li>
             <li><a href="/">About</a></li>

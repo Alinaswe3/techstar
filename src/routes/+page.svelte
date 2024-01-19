@@ -1,5 +1,27 @@
 <script lang="ts">
     import Navbar from "$lib/components/Navbar.svelte";
+    import Hero from "$lib/components/Hero.svelte";
 </script>
 
 <Navbar/>
+<main class="pt-20 relative container">
+    <div class="custom-overlay"></div>
+    <Hero/>
+</main>
+
+<style>
+    .custom-overlay {
+        z-index: -99;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -1rem;
+        left: 0;
+        opacity: 0.022;
+        background:
+                linear-gradient(135deg,#0000 18.75%,#00e472 0 31.25%,#0000 0),
+                repeating-linear-gradient(45deg,#00e472 -6.25% 6.25%,#313536 0 18.75%);
+        background-size: 64px 64px;
+
+    }
+</style>
