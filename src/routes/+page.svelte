@@ -2,6 +2,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
+	import Skills from '$lib/components/Skills.svelte';
 </script>
 
 <Navbar />
@@ -9,6 +10,7 @@
 	<div class="custom-overlay"></div>
 	<Hero />
 	<About />
+	<Skills />
 </main>
 
 <style>
