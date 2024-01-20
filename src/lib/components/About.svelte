@@ -7,7 +7,7 @@
 	</div>
 	<div class="flex flex-col gap-6 lg:row-start-1">
 		<h3 class="section-title">about me</h3>
-		<h4 class="text-6xl">Web Developer</h4>
+		<h4 class="section-heading text-6xl">Web Developer</h4>
 		<div class="long-text">
 			<p>
 				PHP, ASP, Ruby, Python, etc. Medium skill in database/server work, medium skill in

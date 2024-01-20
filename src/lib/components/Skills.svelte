@@ -4,7 +4,7 @@
 
 <section class="my-16 grid grid-cols-2 justify-items-center gap-12 lg:grid-cols-1">
 	<div class="self-center">
-		<h4 class="text-5xl leading-tight lg:text-3xl">
+		<h4 class="section-heading text-5xl leading-tight lg:text-3xl">
 			<span> I am a Web developer. </span><br />
 			<span> And I excel at what I do. </span>
 		</h4>

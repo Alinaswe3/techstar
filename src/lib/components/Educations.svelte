@@ -5,7 +5,7 @@
 <section class="grid grid-cols-2 gap-12 lg:grid-cols-1">
 	<div class="flex flex-col gap-8">
 		<h2 class="section-title">more about me</h2>
-		<h3 class="mb-2 font-serif text-5xl">Educations</h3>
+		<h3 class="section-heading">Educations</h3>
 		<div class="relative flex flex-col gap-8">
 			<div class="absolute left-[3.5%] top-[1.3rem] h-full w-[3px] bg-primary"></div>
 			<Education level="High School" schoolName="South Madarsha S.S. High School (2005 - 2010)">

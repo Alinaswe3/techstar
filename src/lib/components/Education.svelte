@@ -29,7 +29,7 @@
 	<div>
 		<h4 class="my-3 text-lg text-primary">{schoolName}</h4>
 		<p class="flex flex-col gap-2">
-			<span class="text-3xl tracking-wide">{level}</span>
+			<span class="section-heading text-3xl tracking-wide">{level}</span>
 			<span class="long-text text-base">
 				<slot />
 			</span>
