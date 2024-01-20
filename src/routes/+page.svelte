@@ -5,6 +5,7 @@
 	import Skills from '$lib/components/Skills.svelte';
 	import Education from '$lib/components/Educations.svelte';
 	import Services from '$lib/components/Services.svelte';
+	import Statistics from '$lib/components/Statistics.svelte';
 </script>
 
 <Navbar />
@@ -15,6 +16,7 @@
 	<Skills />
 	<Education />
 	<Services />
+	<Statistics />
 </main>
 
 <style>
