@@ -4,9 +4,7 @@
 </script>
 
 <div class="relative h-fit w-fit">
-	<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl tracking-wide"
-		>{skill}</span
-	>
+	<span class="absolute-center text-2xl tracking-wide">{skill}</span>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
