@@ -10,6 +10,7 @@
 	import Statistics from '$lib/components/Statistics.svelte';
 	import Reviews from '$lib/components/Reviews.svelte';
 	import Contact from '$lib/components/Contact.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	export let data: PageData;
 </script>
@@ -26,6 +27,7 @@
 	<Statistics />
 	<Reviews />
 	<Contact {data} />
+	<Footer />
 </main>
 
 <style>
@@ -34,7 +36,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		top: -1rem;
+		top: 0;
 		left: 0;
 		opacity: 0.022;
 		background: linear-gradient(135deg, #0000 18.75%, #00e472 0 31.25%, #0000 0),
