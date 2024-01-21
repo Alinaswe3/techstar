@@ -59,7 +59,7 @@
 	});
 </script>
 
-<section class="flex w-full flex-col items-center justify-center gap-8">
+<section id="contact" class="flex w-full flex-col items-center justify-center gap-8">
 	<h3 class="section-title">just a ping away</h3>
 	<h2 class="section-heading">Contact</h2>
 	<form method="POST" class="flex w-full max-w-[37rem] flex-col gap-6" use:enhance>

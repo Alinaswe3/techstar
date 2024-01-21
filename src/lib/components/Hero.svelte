@@ -1,4 +1,4 @@
-<header class="grid grid-cols-[1.1fr_0.9fr] items-center gap-6 lg:grid-cols-1 lg:gap-16">
+<header id="home" class="grid grid-cols-[1.1fr_0.9fr] items-center gap-6 lg:grid-cols-1 lg:gap-16">
 	<div class="flex flex-col gap-6">
 		<h2 class="section-heading text-5xl leading-tight md:text-3xl">
 			I have lots of things to prove to myself. One is I can live my life <strong>fearlessly</strong
@@ -8,8 +8,10 @@
 			Web Developer, Problem solver, and a Hiker
 		</p>
 		<div class="mt-4 flex gap-4">
-			<button class="btn btn-primary btn-sm"> Learn more </button>
-			<button class="btn btn-outline btn-primary btn-sm"> Contact </button>
+			<button class="btn btn-disabled btn-primary btn-sm"> Learn more </button>
+			<a href="#contact" class="js-smooth btn btn-outline btn-primary btn-sm cursor-pointer">
+				Contact
+			</a>
 		</div>
 	</div>
 	<div class="border-animate">
@@ -23,7 +25,6 @@
 
 <style>
 	header {
-		z-index: -1;
 		min-height: 16em;
 		margin-top: -2rem;
 		padding: 3rem 0.5rem;

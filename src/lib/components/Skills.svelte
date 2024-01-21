@@ -2,7 +2,7 @@
 	import Skill from '$lib/components/Skill.svelte';
 </script>
 
-<section class="mt-16 grid grid-cols-2 justify-items-center gap-12 lg:grid-cols-1">
+<section id="skills" class="mt-16 grid grid-cols-2 justify-items-center gap-12 lg:grid-cols-1">
 	<div class="self-center">
 		<h4 class="section-heading text-5xl leading-tight lg:text-3xl">
 			<span> I am a Web developer. </span><br />

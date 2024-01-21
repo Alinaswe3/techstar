@@ -2,7 +2,7 @@
 	import Review from '$lib/components/Review.svelte';
 </script>
 
-<section class="mt-10">
+<section id="reviews" class="mt-10">
 	<h3 class="section-title">what people saying</h3>
 	<h2 class="section-heading mt-8">Clients</h2>
 	<div class="responsive-grid">
