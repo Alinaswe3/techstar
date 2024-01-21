@@ -6,6 +6,7 @@
 	import Education from '$lib/components/Educations.svelte';
 	import Services from '$lib/components/Services.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
+	import Reviews from '$lib/components/Reviews.svelte';
 </script>
 
 <Navbar />
@@ -17,6 +18,7 @@
 	<Education />
 	<Services />
 	<Statistics />
+	<Reviews />
 </main>
 
 <style>

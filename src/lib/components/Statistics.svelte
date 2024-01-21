@@ -4,7 +4,7 @@
 </script>
 
 <section
-	class="responsive-grid my-14 rounded-3xl bg-base-100 shadow-sm shadow-primary transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-primary"
+	class="responsive-grid mt-14 rounded-3xl bg-base-100 shadow-sm shadow-primary transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-primary"
 >
 	<Statistic count="25" name="Clients">
 		<Icon class="h-full w-full" icon="bi:people" />
