@@ -2,7 +2,7 @@
 	import Skill from '$lib/components/Skill.svelte';
 </script>
 
-<section class="my-16 grid grid-cols-2 justify-items-center gap-12 lg:grid-cols-1">
+<section class="mt-16 grid grid-cols-2 justify-items-center gap-12 lg:grid-cols-1">
 	<div class="self-center">
 		<h4 class="section-heading text-5xl leading-tight lg:text-3xl">
 			<span> I am a Web developer. </span><br />
@@ -15,10 +15,21 @@
 			and help probably a million people
 		</p>
 	</div>
-	<div class="grid grid-cols-2 items-center justify-items-center gap-12">
+	<div class="responsive-grid">
 		<Skill size="140" skill="Html" />
 		<Skill size="140" skill="Css" />
 		<Skill size="140" skill="Java" />
 		<Skill size="140" skill="SQL" />
 	</div>
 </section>
+
+<style>
+	.responsive-grid {
+		overflow: hidden;
+		width: 100%;
+		padding: 2rem;
+		gap: 2rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min-content, 8rem));
+	}
+</style>
