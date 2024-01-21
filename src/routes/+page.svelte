@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Toaster } from 'svelte-french-toast';
+	import type { PageData } from './$types';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
@@ -7,8 +9,12 @@
 	import Services from '$lib/components/Services.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
 	import Reviews from '$lib/components/Reviews.svelte';
+	import Contact from '$lib/components/Contact.svelte';
+
+	export let data: PageData;
 </script>
 
+<Toaster />
 <Navbar />
 <main class="container relative grid gap-16 px-10 pt-20 lg:px-2">
 	<div class="custom-overlay"></div>
@@ -19,6 +25,7 @@
 	<Services />
 	<Statistics />
 	<Reviews />
+	<Contact {data} />
 </main>
 
 <style>
