@@ -16,10 +16,10 @@
 		</p>
 	</div>
 	<div class="responsive-grid">
-		<Skill size="140" skill="Html" />
-		<Skill size="140" skill="Css" />
-		<Skill size="140" skill="Java" />
-		<Skill size="140" skill="SQL" />
+		<Skill size="120" skill="Html" />
+		<Skill size="120" skill="Css" />
+		<Skill size="120" skill="Java" />
+		<Skill size="120" skill="SQL" />
 	</div>
 </section>
 
@@ -30,6 +30,7 @@
 		padding: 2rem;
 		gap: 2rem;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min-content, 8rem));
+		grid-template-columns: repeat(auto-fit, minmax(min-content, 6rem));
+		justify-content: space-around;
 	}
 </style>

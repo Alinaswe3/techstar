@@ -1,10 +1,10 @@
 <script>
 	import '../app.pcss';
 	import { onMount } from 'svelte';
-	import { smoothScroll } from '$lib/components/smoothScroll';
+	import { addSmoothScroll } from '$lib/components/smoothScroll';
 
 	onMount(() => {
-		smoothScroll();
+		addSmoothScroll('.js-smooth');
 	});
 </script>
 

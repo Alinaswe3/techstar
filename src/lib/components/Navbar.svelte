@@ -2,6 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { onSmoothScroll } from '$lib/components/smoothScroll';
 
 	let isNavOpen: boolean = false;
 </script>
@@ -13,15 +14,54 @@
 {#if isNavOpen}
 	<!-- `A11y: Non-interactive element <ul> should not be assigned mouse or keyboard event listeners.` -->
 	<ul
-		on:click={() => (isNavOpen = false)}
 		transition:slide={{ delay: 100, duration: 200, easing: quintOut, axis: 'x' }}
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
-		<li><a class="js-smooth" href="#home">Home</a></li>
-		<li><a class="js-smooth" href="#about">About</a></li>
-		<li><a class="js-smooth" href="#skills">Skills</a></li>
-		<li><a class="js-smooth" href="#services">Services</a></li>
-		<li><a class="js-smooth" href="#reviews">Reviews</a></li>
+		<li>
+			<a
+				on:click={(e) => {
+					onSmoothScroll(e);
+					isNavOpen = false;
+				}}
+				href="#home">Home</a
+			>
+		</li>
+		<li>
+			<a
+				on:click={(e) => {
+					onSmoothScroll(e);
+					isNavOpen = false;
+				}}
+				href="#about">About</a
+			>
+		</li>
+		<li>
+			<a
+				on:click={(e) => {
+					onSmoothScroll(e);
+					isNavOpen = false;
+				}}
+				href="#skills">Skills</a
+			>
+		</li>
+		<li>
+			<a
+				on:click={(e) => {
+					onSmoothScroll(e);
+					isNavOpen = false;
+				}}
+				href="#services">Services</a
+			>
+		</li>
+		<li>
+			<a
+				on:click={(e) => {
+					onSmoothScroll(e);
+					isNavOpen = false;
+				}}
+				href="#reviews">Reviews</a
+			>
+		</li>
 	</ul>
 {/if}
 <nav class="navbar fixed left-0 top-0 z-10 bg-base-100 shadow-2xl">
