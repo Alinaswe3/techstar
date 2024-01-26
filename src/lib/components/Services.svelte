@@ -6,9 +6,21 @@
 	<h3 class="section-title text-center">more about me</h3>
 	<h2 class="section-heading mb-8 text-center">Services I offer</h2>
 	<div class="services">
-		<Service />
-		<Service />
-		<Service />
+		<Service
+			serviceName="Entrepreneur"
+			serviceImg="/images/tech.webp"
+			serviceDescription="Here to provide you the with best devices, at budget friendly prices"
+		/>
+		<Service
+			serviceName="Web Development"
+			serviceImg="/images/web.webp"
+			serviceDescription="Let me help you build your online presence"
+		/>
+		<Service
+			serviceImg="/images/coming-soon.webp"
+			serviceName="Coming soon!"
+			serviceDescription="New service to be provided soon!"
+		/>
 	</div>
 </section>
 

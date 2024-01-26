@@ -10,9 +10,10 @@
 		</h4>
 		<br />
 		<p class="long-text">
-			The quick brown fox jumps over the lazy dog. It is the goto line for learning touch tpying. I
-			use this line quite often. And It is very helpful. Someone came up with this brillient line
-			and help probably a million people
+			Passionate web developer with expertise in HTML, CSS, JavaScript, and SQL. I bring websites to
+			life, ensuring they're visually stunning. Transforming ideas into engaging online experiences
+			is what I do best. Let's elevate your digital presence together—because excellence is the
+			standard in my code.
 		</p>
 	</div>
 	<div class="responsive-grid">

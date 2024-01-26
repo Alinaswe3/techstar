@@ -4,16 +4,16 @@
 	</div>
 	<div class="flex flex-col gap-6 lg:row-start-1">
 		<h3 class="section-title">about me</h3>
-		<h4 class="section-heading text-6xl">Web Developer</h4>
+		<h4 class="section-heading text-6xl">Entrepreneur</h4>
 		<div class="long-text">
 			<p>
-				PHP, ASP, Ruby, Python, etc. Medium skill in database/server work, medium skill in
-				JavaScript, light skill in HTML.
+				I am a growing entrepreneur who takes his passion for tech and brings it to the world of
+				consumers
 			</p>
 			<br />
 			<p>
-				This is very different from a Front End Developer as there is little working with the design
-				and heavier on programming concepts and concerns, like security and structure.
+				I work by supplying smartphones, laptops, smart watches, and other gadgets from China,
+				recommending the best products for your needs and budget
 			</p>
 		</div>
 	</div>

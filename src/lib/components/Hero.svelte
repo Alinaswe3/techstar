@@ -1,12 +1,9 @@
 <header id="home" class="grid grid-cols-[1.1fr_0.9fr] items-center gap-6 lg:grid-cols-1 lg:gap-16">
 	<div class="flex flex-col gap-6">
 		<h1 class="section-heading text-5xl leading-tight md:text-3xl">
-			I have lots of things to prove to myself. One is I can live my life <strong>fearlessly</strong
-			>
+			Aspiring <strong>software developer</strong> with a keen interest in the tech world
 		</h1>
-		<p class="text-2xl text-secondary-content md:text-xl">
-			Web Developer, Problem solver, and a Hiker
-		</p>
+		<p class="text-2xl text-secondary-content md:text-xl">Software Developer | Entrepreneur</p>
 		<div class="mt-4 flex gap-4">
 			<button class="btn btn-disabled btn-primary btn-sm"> Learn more </button>
 			<a href="#contact" class="js-smooth btn btn-outline btn-primary btn-sm cursor-pointer">
@@ -18,7 +15,7 @@
 		<img
 			class="h-full w-full"
 			src="https://cdn.pixabay.com/photo/2019/07/14/16/29/pen-4337524_1280.jpg"
-			alt="Hero image"
+			alt="Tony's gadgets"
 		/>
 	</div>
 </header>
