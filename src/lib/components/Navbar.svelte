@@ -64,15 +64,15 @@
 				{/if}
 			</button>
 		</div>
-		<a href="#home" class="js-smooth pl-2 text-xl font-semibold lg:pl-4">TechStar</a>
+		<a href="#home" class="js-smooth pl-2 text-xl font-semibold lg:pl-4">TonyStar</a>
 	</div>
 	<div class="navbar-center flex lg:hidden">
-		<ul class="menu menu-horizontal px-1">
-			<li><a class="js-smooth" href="#home">Home</a></li>
-			<li><a class="js-smooth" href="#about">About</a></li>
-			<li><a class="js-smooth" href="#skills">Skills</a></li>
-			<li><a class="js-smooth" href="#services">Services</a></li>
-			<li><a class="js-smooth" href="#reviews">Reviews</a></li>
+		<ul class="flex gap-8">
+			<li><a class="js-smooth nav-links" href="#home">Home</a></li>
+			<li><a class="js-smooth nav-links" href="#about">About</a></li>
+			<li><a class="js-smooth nav-links" href="#skills">Skills</a></li>
+			<li><a class="js-smooth nav-links" href="#services">Services</a></li>
+			<li><a class="js-smooth nav-links" href="#reviews">Reviews</a></li>
 		</ul>
 	</div>
 	<div class="navbar-end pr-2">

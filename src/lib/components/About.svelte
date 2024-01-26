@@ -1,9 +1,6 @@
 <section id="about" class="mt-20 grid grid-cols-2 items-center gap-14 lg:grid-cols-1">
 	<div class="img-border">
-		<img
-			src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			alt="Tony Chingore"
-		/>
+		<img src="/images/tony.webp" alt="An image of the CEO Tony Chingore" />
 	</div>
 	<div class="flex flex-col gap-6 lg:row-start-1">
 		<h3 class="section-title">about me</h3>

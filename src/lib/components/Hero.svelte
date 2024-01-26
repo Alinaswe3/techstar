@@ -1,9 +1,9 @@
 <header id="home" class="grid grid-cols-[1.1fr_0.9fr] items-center gap-6 lg:grid-cols-1 lg:gap-16">
 	<div class="flex flex-col gap-6">
-		<h2 class="section-heading text-5xl leading-tight md:text-3xl">
+		<h1 class="section-heading text-5xl leading-tight md:text-3xl">
 			I have lots of things to prove to myself. One is I can live my life <strong>fearlessly</strong
 			>
-		</h2>
+		</h1>
 		<p class="text-2xl text-secondary-content md:text-xl">
 			Web Developer, Problem solver, and a Hiker
 		</p>
