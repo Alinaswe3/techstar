@@ -5,62 +5,45 @@
 	import { onSmoothScroll } from '$lib/components/smoothScroll';
 
 	let isNavOpen: boolean = false;
+
+	const onNavClick = (e: any) => {
+		const target = e?.target as HTMLAnchorElement | null;
+		if (target)
+			if (target.closest('a')) {
+				onSmoothScroll(e);
+				isNavOpen = false;
+			}
+	};
 </script>
 
 {#if isNavOpen}
-	<!-- `A11y: Non-interactive element <div> should not be assigned mouse or keyboard event listeners.` -->
-	<div class="absolute left-0 top-0 z-20 h-full w-full" on:click={() => (isNavOpen = false)}></div>
+	<div
+		role="presentation"
+		class="absolute left-0 top-0 z-20 h-full w-full"
+		on:click={() => (isNavOpen = false)}
+	></div>
 {/if}
 {#if isNavOpen}
-	<!-- `A11y: Non-interactive element <ul> should not be assigned mouse or keyboard event listeners.` -->
 	<ul
+		role="presentation"
+		on:click={onNavClick}
 		transition:slide={{ delay: 100, duration: 200, easing: quintOut, axis: 'x' }}
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
 		<li>
-			<a
-				on:click={(e) => {
-					onSmoothScroll(e);
-					isNavOpen = false;
-				}}
-				href="#home">Home</a
-			>
+			<a href="#home">Home</a>
 		</li>
 		<li>
-			<a
-				on:click={(e) => {
-					onSmoothScroll(e);
-					isNavOpen = false;
-				}}
-				href="#about">About</a
-			>
+			<a href="#about">About</a>
 		</li>
 		<li>
-			<a
-				on:click={(e) => {
-					onSmoothScroll(e);
-					isNavOpen = false;
-				}}
-				href="#skills">Skills</a
-			>
+			<a href="#skills">Skills</a>
 		</li>
 		<li>
-			<a
-				on:click={(e) => {
-					onSmoothScroll(e);
-					isNavOpen = false;
-				}}
-				href="#services">Services</a
-			>
+			<a href="#services">Services</a>
 		</li>
 		<li>
-			<a
-				on:click={(e) => {
-					onSmoothScroll(e);
-					isNavOpen = false;
-				}}
-				href="#reviews">Reviews</a
-			>
+			<a href="#reviews">Reviews</a>
 		</li>
 	</ul>
 {/if}
