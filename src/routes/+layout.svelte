@@ -1,11 +1,17 @@
 <script>
 	import '../app.pcss';
 	import { onMount } from 'svelte';
-	import { smoothScroll } from '$lib/components/smoothScroll';
+	import { addSmoothScroll } from '$lib/components/smoothScroll';
 
 	onMount(() => {
-		smoothScroll();
+		addSmoothScroll('.js-smooth');
 	});
 </script>
+
+<svelte:head>
+	<title>TechStar - Focus more on delivery than profits</title>
+	<meta name="description" content="TechStar is ..." />
+	<meta name="robots" content="index, follow" />
+</svelte:head>
 
 <slot />
