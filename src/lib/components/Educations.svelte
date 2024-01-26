@@ -8,13 +8,10 @@
 		<h3 class="section-heading">Educations</h3>
 		<div class="relative flex flex-col gap-8">
 			<div class="absolute left-[3.5%] top-[1.3rem] h-full w-[3px] bg-primary"></div>
-			<Education level="High School" schoolName="South Madarsha S.S. High School (2005 - 2010)">
-				The quick brown fox jumps over the lazy dog. It is the goto line for learning touch typing
+			<Education level="University" schoolName="Mulungushi University (2021 - present)">
+				Third-year computer science student on the path to a bachelor's degree.
 			</Education>
-			<Education level="College" schoolName="South Madarsha S.S. High School (2005 - 2010)">
-				The quick brown fox jumps over the lazy dog. It is the goto line for learning touch typing
-			</Education>
-			<Education level="University" schoolName="South Madarsha S.S. High School (2005 - 2010)">
+			<Education level="High School" schoolName="Northmead Secondary School (2015 - 2019)">
 				The quick brown fox jumps over the lazy dog. It is the goto line for learning touch typing
 			</Education>
 		</div>
