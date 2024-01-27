@@ -4,7 +4,7 @@
 	</div>
 	<div class="flex flex-col gap-6 lg:row-start-1">
 		<h3 class="section-title">about me</h3>
-		<h4 class="section-heading text-6xl">Entrepreneur</h4>
+		<h4 class="section-heading text-4xl">Entrepreneur</h4>
 		<div class="long-text">
 			<p>
 				I am a growing entrepreneur who takes his passion for tech and brings it to the world of

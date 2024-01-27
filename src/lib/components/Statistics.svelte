@@ -6,13 +6,13 @@
 <section
 	class="responsive-grid mt-14 rounded-3xl bg-base-100 shadow-sm shadow-primary transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-primary"
 >
-	<Statistic count="25" name="Clients">
+	<Statistic count="1" name="Client">
 		<Icon class="h-full w-full" icon="bi:people" />
 	</Statistic>
-	<Statistic count="2" name="Projects">
+	<Statistic count="1" name="Project">
 		<Icon class="h-full w-full" icon="pajamas:work" />
 	</Statistic>
-	<Statistic count="10" name="Sales">
+	<Statistic count="50+" name="Sales">
 		<Icon class="h-full w-full" icon="tdesign:money" />
 	</Statistic>
 </section>
