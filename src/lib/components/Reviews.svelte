@@ -43,7 +43,7 @@
 		padding: 2.4rem 5px;
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(16rem, max-content));
+		grid-template-columns: repeat(auto-fill, minmax(20rem, max-content));
 		gap: 2rem;
 	}
 </style>
