@@ -8,15 +8,15 @@
 		<a class="link underline-offset-4" href="https://www.alinaswecodes.com/">Alinaswe Codes</a>
 	</p>
 	<div class="flex gap-6">
-		<a href="https://www.facebook.com/profile.php?id=100094165897176">
+		<a href="https://www.facebook.com/profile.php?id=100094165897176" target="_blank">
 			<Icon icon="mdi:facebook" class="text-2xl transition-all duration-300 hover:text-primary"
 			></Icon>
 		</a>
-		<a href="https://wa.me/message/T7THJAPVGD3SL1">
+		<a href="https://wa.me/message/T7THJAPVGD3SL1" target="_blank">
 			<Icon icon="mdi:whatsapp" class="text-2xl transition-all duration-300 hover:text-primary"
 			></Icon>
 		</a>
-		<a href="https://www.instagram.com/tonderai__?igsh=Y2MyMzhjbXZrNDhm">
+		<a href="https://www.instagram.com/tonderai__?igsh=Y2MyMzhjbXZrNDhm" target="_blank">
 			<Icon icon="mdi:instagram" class="text-2xl transition-all duration-300 hover:text-primary"
 			></Icon>
 		</a>

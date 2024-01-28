@@ -2,9 +2,11 @@
 	import '../app.pcss';
 	import { onMount } from 'svelte';
 	import { addSmoothScroll } from '$lib/components/smoothScroll';
+	import { setUpSectionObserver } from '$lib/components/sectionObserver';
 
 	onMount(() => {
 		addSmoothScroll('.js-smooth');
+		setUpSectionObserver();
 	});
 </script>
 

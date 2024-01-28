@@ -12,11 +12,7 @@
 		</div>
 	</div>
 	<div class="border-animate">
-		<img
-			class="h-full w-full"
-			src="https://cdn.pixabay.com/photo/2019/07/14/16/29/pen-4337524_1280.jpg"
-			alt="Tony's gadgets"
-		/>
+		<img class="h-full w-full" src="/images/hero.webp" alt="Tony's gadgets" />
 	</div>
 </header>
 
