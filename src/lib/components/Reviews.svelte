@@ -17,7 +17,7 @@
 		</Review>
 		<Review
 			clientImg="/images/tasheni.webp"
-			clientName="Tasheni B Chibwe"
+			clientName="Tasheni B. Chibwe"
 			serviceOffered="Business Client"
 		>
 			Tonystar Electronics lives up to their word. They deliver within their situated number of
@@ -25,12 +25,12 @@
 			have no regrets
 		</Review>
 		<Review
-			clientImg="/images/chama.webp"
-			clientName="Chama Musonda"
+			clientImg="/images/isabel.webp"
+			clientName="Isabel Cooke"
 			serviceOffered="Business Client"
 		>
-			PHP, ASP, Ruby, Python, etc. Medium skill in database/server work, medium skill in JavaScript,
-			light skill in HTML.
+			I love the iphone 11, the storage and all, the camera is great I have no complaints on
+			anything, I'd definitely recommend you
 		</Review>
 	</div>
 </section>

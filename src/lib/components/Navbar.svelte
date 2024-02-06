@@ -3,7 +3,6 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { onSmoothScroll } from '$lib/components/smoothScroll';
-	import { elementInViewport } from '$lib/stores/store';
 
 	let isNavOpen: boolean = false;
 
@@ -70,34 +69,19 @@
 	<div class="navbar-center flex lg:hidden">
 		<ul class="flex gap-8">
 			<li>
-				<a
-					class={`js-smooth nav-links ${$elementInViewport === 'home' ? 'is-visible' : ''}`}
-					href="#home">Home</a
-				>
+				<a class="js-smooth nav-links" href="#home">Home</a>
 			</li>
 			<li>
-				<a
-					class={`js-smooth nav-links ${$elementInViewport === 'about' ? 'is-visible' : ''}`}
-					href="#about">About</a
-				>
+				<a class="js-smooth nav-links" href="#about">About</a>
 			</li>
 			<li>
-				<a
-					class={`js-smooth nav-links ${$elementInViewport === 'skills' ? 'is-visible' : ''}`}
-					href="#skills">Skills</a
-				>
+				<a class="js-smooth nav-links" href="#skills">Skills</a>
 			</li>
 			<li>
-				<a
-					class={`js-smooth nav-links ${$elementInViewport === 'services' ? 'is-visible' : ''}`}
-					href="#services">Services</a
-				>
+				<a class="js-smooth nav-links" href="#services">Services</a>
 			</li>
 			<li>
-				<a
-					class={`js-smooth nav-links ${$elementInViewport === 'reviews' ? 'is-visible' : ''}`}
-					href="#reviews">Reviews</a
-				>
+				<a class="js-smooth nav-links" href="#reviews">Reviews</a>
 			</li>
 		</ul>
 	</div>
