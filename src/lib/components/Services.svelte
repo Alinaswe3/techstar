@@ -19,7 +19,7 @@
 		<Service
 			serviceImg="/images/coming-soon.webp"
 			serviceName="Coming soon!"
-			serviceDescription="New service to be provided soon!"
+			serviceDescription="Working to provide you with app development"
 		/>
 	</div>
 </section>

@@ -12,16 +12,13 @@
 				Third-year computer science student on the path to a bachelor's degree.
 			</Education>
 			<Education level="High School" schoolName="Northmead Secondary School (2015 - 2019)">
-				The quick brown fox jumps over the lazy dog. It is the goto line for learning touch typing
+				Graduated high school, and earned a full school certificate on my first attempt
 			</Education>
 		</div>
 	</div>
 	<div
 		class="mt-20 h-4/5 w-auto max-w-96 self-center justify-self-center overflow-hidden rounded-xl lg:mt-0"
 	>
-		<img
-			alt="Tony Chingore"
-			src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		/>
+		<img alt="Tony Chingore" src="/images/tony.jpg" />
 	</div>
 </section>
