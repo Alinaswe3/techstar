@@ -7,7 +7,7 @@
 		<h2 class="section-title">more about me</h2>
 		<h3 class="section-heading">Educations</h3>
 		<div class="relative flex flex-col gap-8">
-			<div class="absolute left-[3.5%] top-[1.3rem] h-full w-[3px] bg-primary"></div>
+			<div class="absolute left-[16px] top-[22px] h-full w-[3px] bg-primary"></div>
 			<Education level="University" schoolName="Mulungushi University (2021 - present)">
 				Third-year computer science student on the path to a bachelor's degree.
 			</Education>

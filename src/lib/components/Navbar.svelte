@@ -7,6 +7,7 @@
 	let isNavOpen: boolean = false;
 
 	const onNavClick = (e: any) => {
+		e.preventDefault();
 		const target = e?.target as HTMLAnchorElement | null;
 		if (target)
 			if (target.closest('a')) {
