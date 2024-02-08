@@ -2,18 +2,18 @@
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-	import { onSmoothScroll } from '$lib/components/smoothScroll';
 
 	let isNavOpen: boolean = false;
 
-	const onNavClick = (e: any) => {
+	const onSmoothScrollMobile = (e: any) => {
 		e.preventDefault();
-		const target = e?.target as HTMLAnchorElement | null;
-		if (target)
-			if (target.closest('a')) {
-				onSmoothScroll(e);
-				isNavOpen = false;
-			}
+		const href = e.target.getAttribute('href');
+		const target = document.querySelector(href);
+		target.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+			inline: 'nearest'
+		});
 	};
 </script>
 
@@ -27,24 +27,23 @@
 {#if isNavOpen}
 	<ul
 		role="presentation"
-		on:click={onNavClick}
 		transition:slide={{ delay: 100, duration: 200, easing: quintOut, axis: 'x' }}
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
 		<li>
-			<a href="#home">Home</a>
+			<a on:click={onSmoothScrollMobile} href="#home">Home</a>
 		</li>
 		<li>
-			<a href="#about">About</a>
+			<a on:click={onSmoothScrollMobile} href="#about">About</a>
 		</li>
 		<li>
-			<a href="#skills">Skills</a>
+			<a on:click={onSmoothScrollMobile} href="#skills">Skills</a>
 		</li>
 		<li>
-			<a href="#services">Services</a>
+			<a on:click={onSmoothScrollMobile} href="#services">Services</a>
 		</li>
 		<li>
-			<a href="#reviews">Reviews</a>
+			<a on:click={onSmoothScrollMobile} href="#reviews">Reviews</a>
 		</li>
 	</ul>
 {/if}
