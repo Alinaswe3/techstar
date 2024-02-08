@@ -14,7 +14,6 @@ export const onSmoothScroll = (e: any) => {
 
 export const addSmoothScroll = (cssClassSelector: string) => {
 	const links = document.querySelectorAll(cssClassSelector);
-
 	links.forEach((link) => {
 		link.addEventListener('click', onSmoothScroll);
 	});

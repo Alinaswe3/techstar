@@ -3,13 +3,12 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
-	let isNavOpen: boolean = false;
+	let isNavOpen = false;
 
-	const onSmoothScrollMobile = (e: any) => {
-		e.preventDefault();
-		const href = e.target.getAttribute('href');
-		const target = document.querySelector(href);
-		target.scrollIntoView({
+	const scrollIntoView = ({ target }: any) => {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({
 			behavior: 'smooth',
 			block: 'start',
 			inline: 'nearest'
@@ -31,19 +30,19 @@
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
 		<li>
-			<a on:click={onSmoothScrollMobile} href="#home">Home</a>
+			<a on:click|preventDefault={scrollIntoView} href="#home">Home</a>
 		</li>
 		<li>
-			<a on:click={onSmoothScrollMobile} href="#about">About</a>
+			<a on:click|preventDefault={scrollIntoView} href="#about">About</a>
 		</li>
 		<li>
-			<a on:click={onSmoothScrollMobile} href="#skills">Skills</a>
+			<a on:click|preventDefault={scrollIntoView} href="#skills">Skills</a>
 		</li>
 		<li>
-			<a on:click={onSmoothScrollMobile} href="#services">Services</a>
+			<a on:click|preventDefault={scrollIntoView} href="#services">Services</a>
 		</li>
 		<li>
-			<a on:click={onSmoothScrollMobile} href="#reviews">Reviews</a>
+			<a on:click|preventDefault={scrollIntoView} href="#reviews">Reviews</a>
 		</li>
 	</ul>
 {/if}
