@@ -22,6 +22,7 @@
 		margin-top: -2rem;
 		padding: 3rem 0.5rem;
 		height: calc(100vh - 6rem);
+		max-height: 800px;
 	}
 
 	.border-animate {
