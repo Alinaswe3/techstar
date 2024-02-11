@@ -1,6 +1,6 @@
 <section id="about" class="mt-20 grid grid-cols-2 items-center gap-14 lg:grid-cols-1">
 	<div class="img-border">
-		<img src="/images/tony.webp" alt="An image of the CEO Tony Chingore" />
+		<img src="/images/tony.webp" alt="CEO Tony Chingore" />
 	</div>
 	<div class="flex flex-col gap-6 lg:row-start-1">
 		<h3 class="section-title">about me</h3>

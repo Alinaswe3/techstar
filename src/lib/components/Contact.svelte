@@ -17,9 +17,9 @@
 		onSubmit: () => {
 			isLoading = true;
 		},
-		onResult: async ({ result }) => {
-			if (result.status === 200) {
-				data = result?.data?.form?.data;
+		onUpdate: async ({ form, formEl }) => {
+			if (form.valid) {
+				data = form.data;
 				if (data) {
 					await emailjs
 						.send(
@@ -33,11 +33,12 @@
 							PUBLIC_KEY
 						)
 						.then(() => {
+							formEl.reset();
 							toast.success('Message sent successfully!', {
 								duration: 3000
 							});
 						})
-						.catch((err) => {
+						.catch(() => {
 							toast.error('Something went wrong.\nPlease try again', {
 								duration: 3000
 							});
@@ -66,6 +67,7 @@
 		<div class="flex flex-col gap-1">
 			<label for="name">Your Name</label>
 			<input
+				disabled={isLoading}
 				id="name"
 				type="text"
 				name="name"
@@ -81,6 +83,7 @@
 		<div class="flex flex-col gap-1">
 			<label for="email">Your Email</label>
 			<input
+				disabled={isLoading}
 				type="text"
 				id="email"
 				name="email"
@@ -96,6 +99,7 @@
 		<div class="flex flex-col gap-1">
 			<label for="message">Your Message</label>
 			<textarea
+				disabled={isLoading}
 				id="message"
 				name="message"
 				placeholder="Enter your message"

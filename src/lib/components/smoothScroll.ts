@@ -4,12 +4,11 @@ export const onSmoothScroll = (e: any) => {
 	const href = e.target.getAttribute('href');
 	const target = document.querySelector(href);
 
-	if (target)
-		target.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start',
-			inline: 'nearest'
-		});
+	target.scrollIntoView({
+		behavior: 'smooth',
+		block: 'start',
+		inline: 'nearest'
+	});
 };
 
 export const addSmoothScroll = (cssClassSelector: string) => {
