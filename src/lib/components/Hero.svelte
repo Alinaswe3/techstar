@@ -1,7 +1,3 @@
-<script>
-	import { onSmoothScroll } from '$lib/components/smoothScroll';
-</script>
-
 <header id="home" class="grid grid-cols-[1.1fr_0.9fr] items-center gap-6 lg:grid-cols-1 lg:gap-16">
 	<div class="flex flex-col gap-6">
 		<h1 class="section-heading text-5xl leading-tight md:text-3xl">
@@ -10,13 +6,7 @@
 		<p class="text-2xl text-secondary-content md:text-xl">Software Developer | Entrepreneur</p>
 		<div class="mt-4 flex gap-4">
 			<button class="btn btn-disabled btn-primary btn-sm"> Learn more </button>
-			<a
-				href="#contact"
-				on:click|preventDefault={onSmoothScroll}
-				class="btn btn-outline btn-primary btn-sm cursor-pointer"
-			>
-				Contact
-			</a>
+			<a href="#contact" class="btn btn-outline btn-primary btn-sm cursor-pointer"> Contact </a>
 		</div>
 	</div>
 	<div class="border-animate h-full">
