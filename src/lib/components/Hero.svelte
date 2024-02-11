@@ -11,18 +11,17 @@
 			</a>
 		</div>
 	</div>
-	<div class="border-animate">
+	<div class="border-animate h-full">
 		<img class="h-full w-full" src="/images/hero.webp" alt="Tony's gadgets" />
 	</div>
 </header>
 
 <style>
 	header {
-		min-height: 16em;
 		margin-top: -2rem;
 		padding: 3rem 0.5rem;
-		height: calc(100vh - 6rem);
 		max-height: 800px;
+		min-height: calc(100vh - 6rem);
 	}
 
 	.border-animate {
