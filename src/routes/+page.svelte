@@ -11,12 +11,6 @@
 	import Reviews from '$lib/components/Reviews.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { onMount } from 'svelte';
-	import { addSmoothScroll } from '$lib/components/smoothScroll';
-
-	onMount(() => {
-		addSmoothScroll('.js-smooth');
-	});
 
 	export let data: PageData;
 </script>

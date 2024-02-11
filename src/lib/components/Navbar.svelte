@@ -2,17 +2,9 @@
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { onSmoothScroll } from '$lib/components/smoothScroll';
 
 	let isNavOpen = false;
-
-	const scrollIntoView = ({ target }: any) => {
-		const el = document.querySelector(target.getAttribute('href'));
-		el.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start',
-			inline: 'nearest'
-		});
-	};
 </script>
 
 {#if isNavOpen}
@@ -20,6 +12,7 @@
 		role="presentation"
 		class="absolute left-0 top-0 z-20 h-full w-full"
 		on:click={() => (isNavOpen = false)}
+		on:scroll={() => (isNavOpen = false)}
 	></div>
 {/if}
 {#if isNavOpen}
@@ -29,19 +22,19 @@
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
 		<li>
-			<a on:click|preventDefault={scrollIntoView} href="#home">Home</a>
+			<a on:click|preventDefault={onSmoothScroll} href="#home">Home</a>
 		</li>
 		<li>
-			<a on:click|preventDefault={scrollIntoView} href="#about">About</a>
+			<a on:click|preventDefault={onSmoothScroll} href="#about">About</a>
 		</li>
 		<li>
-			<a on:click|preventDefault={scrollIntoView} href="#skills">Skills</a>
+			<a on:click|preventDefault={onSmoothScroll} href="#skills">Skills</a>
 		</li>
 		<li>
-			<a on:click|preventDefault={scrollIntoView} href="#services">Services</a>
+			<a on:click|preventDefault={onSmoothScroll} href="#services">Services</a>
 		</li>
 		<li>
-			<a on:click|preventDefault={scrollIntoView} href="#reviews">Reviews</a>
+			<a on:click|preventDefault={onSmoothScroll} href="#reviews">Reviews</a>
 		</li>
 	</ul>
 {/if}
@@ -62,28 +55,34 @@
 				{/if}
 			</button>
 		</div>
-		<a href="#home" class="js-smooth pl-2 text-xl font-semibold lg:pl-4">TonyStar</a>
+		<a
+			href="#home"
+			on:click|preventDefault={onSmoothScroll}
+			class="pl-2 text-xl font-semibold lg:pl-4">TonyStar</a
+		>
 	</div>
 	<div class="navbar-center flex lg:hidden">
 		<ul class="flex gap-8">
 			<li>
-				<a class="js-smooth nav-links" href="#home">Home</a>
+				<a on:click|preventDefault={onSmoothScroll} class=" nav-links" href="#home">Home</a>
 			</li>
 			<li>
-				<a class="js-smooth nav-links" href="#about">About</a>
+				<a on:click|preventDefault={onSmoothScroll} class=" nav-links" href="#about">About</a>
 			</li>
 			<li>
-				<a class="js-smooth nav-links" href="#skills">Skills</a>
+				<a on:click|preventDefault={onSmoothScroll} class=" nav-links" href="#skills">Skills</a>
 			</li>
 			<li>
-				<a class="js-smooth nav-links" href="#services">Services</a>
+				<a on:click|preventDefault={onSmoothScroll} class=" nav-links" href="#services">Services</a>
 			</li>
 			<li>
-				<a class="js-smooth nav-links" href="#reviews">Reviews</a>
+				<a on:click|preventDefault={onSmoothScroll} class=" nav-links" href="#reviews">Reviews</a>
 			</li>
 		</ul>
 	</div>
 	<div class="navbar-end pr-2">
-		<a href="#contact" class="js-smooth btn btn-primary btn-sm">Contact</a>
+		<a on:click|preventDefault={onSmoothScroll} href="#contact" class="btn btn-primary btn-sm"
+			>Contact</a
+		>
 	</div>
 </nav>
