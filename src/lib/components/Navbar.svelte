@@ -9,7 +9,7 @@
 {#if isNavOpen}
 	<div
 		role="presentation"
-		class="absolute left-0 top-0 z-20 h-full w-full"
+		class="absolute left-0 top-0 z-20 h-full w-full bg-black opacity-65"
 		on:click={() => (isNavOpen = false)}
 		on:scroll={() => (isNavOpen = false)}
 	></div>
@@ -20,19 +20,19 @@
 		class="menu menu-sm absolute left-[1rem] top-[3.8rem] z-30 mt-3 w-40 rounded-btn bg-base-100 p-2 shadow"
 	>
 		<li>
-			<a href="#home">Home</a>
+			<a on:click={() => (isNavOpen = false)} href="#home">Home</a>
 		</li>
 		<li>
-			<a href="#about">About</a>
+			<a on:click={() => (isNavOpen = false)} href="#about">About</a>
 		</li>
 		<li>
-			<a href="#skills">Skills</a>
+			<a on:click={() => (isNavOpen = false)} href="#skills">Skills</a>
 		</li>
 		<li>
-			<a href="#services">Services</a>
+			<a on:click={() => (isNavOpen = false)} href="#services">Services</a>
 		</li>
 		<li>
-			<a href="#reviews">Reviews</a>
+			<a on:click={() => (isNavOpen = false)} href="#reviews">Reviews</a>
 		</li>
 	</ul>
 {/if}
