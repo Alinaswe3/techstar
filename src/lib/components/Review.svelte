@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="relative flex flex-col gap-10 rounded-2xl border-2 border-primary bg-base-100 px-8 py-16"
+	class="carousel-item relative flex w-1/3 flex-col gap-10 rounded-2xl border-2 border-primary bg-base-100 px-8 py-16 lg:w-1/2 sm:w-full"
 >
 	<div class="flex gap-[14px]">
 		<div class="h-20 w-20 overflow-hidden rounded-full">
