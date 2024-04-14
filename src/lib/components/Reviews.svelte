@@ -3,7 +3,7 @@
 </script>
 
 <section id="reviews" class="mt-10 w-full overflow-hidden">
-	<h3 class="section-title">what people saying</h3>
+	<h3 class="section-title">what people are saying</h3>
 	<h2 class="section-heading mt-8">Clients</h2>
 	<div class="carousel carousel-center w-full gap-4 space-x-8 rounded-box bg-base-100 px-6 py-4">
 		<Review clientImg="/images/chama.webp" clientName="Chama Musonda" serviceOffered="Customer">
